@@ -1,0 +1,35 @@
+.simply-countdown-losange {
+  overflow: visible;
+  display: table;
+  margin: auto;
+}
+
+.simply-countdown-losange>.simply-section {
+  width: 50px;
+  height: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  float: left;
+  margin: 20px;
+  background: var(--pink);
+  border-radius: 15%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+
+.simply-countdown-losange>.simply-section>div {
+  transform: rotate(45deg)
+}
+
+.simply-countdown-losange>.simply-section>div .simply-amount,
+.simply-countdown-losange>.simply-section>div .simply-word {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+.simply-countdown-losange>.simply-section>div .simply-amount {
+  font-size: 1.6rem;
+}
