@@ -84,7 +84,7 @@ body {
 
 .home {
   position: relative;
-  padding-top: 7rem;
+  padding-top: 14rem;
   padding-bottom: 14rem;
 }
 
@@ -106,7 +106,9 @@ body {
 .home h2,
 .info h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
   color: var(--pink);
   font-family: "Sacramento", cursive;
   font-size: 5rem;
@@ -195,13 +197,16 @@ body {
 }
 
 .story,
-.gallery {
+.gallery,
+.rsvp,
+.gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   display: block;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -211,7 +216,9 @@ body {
 }
 
 .story p,
-.gallery p {
+.gallery p,
+.rsvp p,
+.gifts p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -315,6 +322,64 @@ body {
 
 .gallery {
   background-color: #e5e4f2;
+}
+
+.rsvp {
+  background-color: #F1F4F5;
+}
+.rsvp button {
+  margin-top: 20px;
+  background-color: var(--pink);
+  border: 1px solid var(--pink);
+  box-shadow: var(--shadow);
+}
+.rsvp button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
+footer {
+  padding: 3rem;
+  background-color: #ff8fab;
+  color: #fff;
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0 .5rem;
+}
+footer a {
+  color: #fff;
+  transition: .5s ease-in-out;
+}
+footer a:hover {
+  text-shadow: var(--shadow);
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: .5;
+  mix-blend-mode: difference;
+  animation: muter 4s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes muter {
+  from {
+    transform: rotate(0);
+  } to {
+    transform: rotate(360deg);
+  }
 }
 /* media query */
 /* XL */
